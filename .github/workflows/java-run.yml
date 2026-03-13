@@ -1,8 +1,9 @@
-   name: Run Java Program
+name: Run Java Program
 
-on: 
+on:
   push:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   run-java:
@@ -16,7 +17,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           distribution: temurin
-          java-version: '17'
+          java-version: 17
 
       - name: Compile Java
         run: javac App1/src/pack1/Main.java
