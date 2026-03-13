@@ -1,4 +1,4 @@
- name: Run Java Program
+  name: Run Java Program
 
 on: [push]
 
@@ -14,8 +14,8 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Compile
-        run: javac App1/src/*.java
+      - name: Compile Java
+        run: javac App1/src/pack1/Main.java
 
-      - name: Run
-        run: java -cp App1/src Main
+      - name: Run Java
+        run: java -cp App1/src pack1.Main 
