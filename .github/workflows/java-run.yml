@@ -15,7 +15,7 @@ jobs:
           java-version: 17
 
       - name: Compile Java
-        run: javac App1/src/pack1/Main.java
+        run: javac App1/src/pack1/Test.java
 
       - name: Run Java
         run: java -cp App1/src pack1.Main
