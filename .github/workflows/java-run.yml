@@ -25,4 +25,4 @@ jobs:
           javac -d out App1/src/pack1/*.java
 
       - name: Run Java
-        run: java -cp out pack1.Main
+        run: java -cp out pack1.Test
